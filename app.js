@@ -9,7 +9,7 @@ const bgSound = new Audio('./happy-ukulele-song-8347.mp3');
 const eating = new Audio('./eating-chips-81092.mp3');
 
 function init(){
-     posX = 0;
+     posX = 2;
      posY = 1;
      direction = 1;
 
@@ -22,7 +22,7 @@ const head = {
     ctx.fillText  ("🐛", this.x * 20, this.y * 20);
     }
 }
-bgSound.play()
+
 
 snake.push (head);
 snake.push ({
@@ -50,6 +50,7 @@ snake.push ({
     return snake;
 }
   let snake = init();
+  bgSound.play()
 
     function nextMove (){
         snake.forEach((item, index) => {
