@@ -118,7 +118,7 @@ setInterval(() => {
 
 
 
-}, 200);
+}, 100);
 
 document.querySelector('body')
 .addEventListener('keydown', (e) => {
